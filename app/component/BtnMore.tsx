@@ -13,7 +13,7 @@ const BtnMore = ({id}:BtnMoreProps) => {
 			onClick={() => {
 				router.push(`/immobile/${id}`);
 			}}>
-			Vedi
+			Scopri di più
 		</button>
 	);
 }
