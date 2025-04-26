@@ -7,9 +7,10 @@ interface FooterProps {
 
 const Footer = ({sellerData}:FooterProps) => {
 	return (
-		<footer className='footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4'>
+		<footer className='footer sm:footer-horizontal footer-center text-base-content p-4'>
 			<aside>
-				<div className='flex  gap-0.5'>
+				<h1><strong>Contatti:</strong></h1>
+				<div className='flex gap-0.5 '>
 					<span>{sellerData.nome}</span>
 					<span>{sellerData.cognome}</span>
 				</div>

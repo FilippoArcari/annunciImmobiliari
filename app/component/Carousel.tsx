@@ -6,7 +6,7 @@ interface CarouselProps {
 }
 const Carousel = ({images}:CarouselProps) => {
   return (
-		<div className='carousel carousel-center bg-neutral rounded-box  space-x-4 p-4'>
+		<div className='carousel carousel-center bg-transparent rounded-box  space-x-4 p-4'>
 			{images.map((image, index) => (
 				<div className='carousel-item rounded-2xl' key={index}>
 					<Image src={image} alt="carousel Image" width={300} height={200} 

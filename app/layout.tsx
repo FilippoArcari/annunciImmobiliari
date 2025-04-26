@@ -28,7 +28,7 @@ export default async function RootLayout({
 }>) {
 	const data: Data = await fetchSellerData();
 	return (
-		<html lang='it' className='w-full h-lvh'>
+		<html lang='it' className='w-full h-lvh' data-theme='silk'>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased w-full h-lvh`}>
 				<Navbar />

@@ -8,7 +8,7 @@ import BtnMore from "./BtnMore";
 const HouseCard = (immoData:Immobile) => {
 
   return (
-		<div className='card sm:card lg:card-side bg-base-100 shadow-sm '>
+		<div className='card sm:card lg:card-side p-2 shadow-sm bg-base-200'>
 			<figure className="rounded-lg ">
 				<Image
 					src={immoData.copertina}

@@ -1,9 +1,9 @@
 'use client'
 import React from 'react';
 import {useState, useEffect} from 'react';
-import {useRouter} from "next/navigation";
 import { Immobile,Data } from '../../types';
 import Carousel from "../../component/Carousel";
+import CalendarView from "../../component/CalendarView";
 
 
 
@@ -24,7 +24,6 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
 		};
 
 		fetchData();
-		console.log(immoData);
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
@@ -35,7 +34,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
 			<Carousel images={immoData?.immagini || []} />
 			<div className='flex gap-4 w-full justify-center'>
 				<span>
-					Superficie: <span>{immoData?.superficie}</span>
+					Superfice: <span>{immoData?.superficie}</span>
 				</span>
 				<span>
 					Locali: <span>{immoData?.locali}</span>
@@ -45,7 +44,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
 				</span>
 			</div>
 			<div className="flex justify-center" > <span>Prezzo: </span> <strong>{immoData?.affitto}</strong></div>
-			
+			<CalendarView id={id} />
 		</div>):(<div className="loading w-full">Caricamento </div>)
 	);
 }
