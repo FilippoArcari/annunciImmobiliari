@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react';
 import { Immobile,Data } from '../../types';
 import Carousel from "../../component/Carousel";
 import CalendarView from "../../component/CalendarView";
+import MapPointer from "../../component/MapPointer";
 
 
 
@@ -28,7 +29,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
 
 	return (
 		immoData ?(
-		<div className='p-6'>
+		<div className='p-6 w-full flex flex-col justify-center '>
 			<h1 className='text-2xl font-bold'>{immoData?.titolo}</h1>
 			<h2>{immoData?.descrizione}</h2>
 			<Carousel images={immoData?.immagini || []} />
@@ -45,6 +46,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
 			</div>
 			<div className="flex justify-center" > <span>Prezzo: </span> <strong>{immoData?.affitto}</strong></div>
 			<CalendarView id={id} />
+			<MapPointer lat={immoData.coordinates.lat} lon={immoData.coordinates.lng} />
 		</div>):(<div className="loading w-full">Caricamento </div>)
 	);
 }

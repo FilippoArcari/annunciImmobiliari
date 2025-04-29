@@ -15,6 +15,11 @@ export interface Immobile {
 	locali: string;
 	bagni: string;
 	immagini: string[];
+	video: string[];
+	coordinates: {
+		lat: number;
+		lng: number;
+	};
 }
 
 export interface Data {
