@@ -15,7 +15,7 @@ const MapPointer = ({ lat, lon }: MapPointerProps) => {
 			allowFullScreen
 			loading='lazy'
 			referrerPolicy='no-referrer-when-downgrade'
-			className="w"></iframe>
+			className="w-full flex justify-center"></iframe>
 
 	);
 };

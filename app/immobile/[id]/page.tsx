@@ -29,7 +29,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
 
 	return (
 		immoData ?(
-		<div className='p-6 w-full flex flex-col justify-center '>
+		<div className='p-6 w-full flex flex-col justify-center gap-2 '>
 			<h1 className='text-2xl font-bold'>{immoData?.titolo}</h1>
 			<h2>{immoData?.descrizione}</h2>
 			<Carousel images={immoData?.immagini || []} />
