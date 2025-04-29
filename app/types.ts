@@ -11,9 +11,9 @@ export interface Immobile {
 	descrizione: string;
 	copertina: string;
 	affitto: string;
-	superficie: string;
-	locali: string;
-	bagni: string;
+	superfici: string;
+	rooms: string;e
+	bathroom: string;
 	immagini: string[];
 	video: string[];
 	coordinates: {
