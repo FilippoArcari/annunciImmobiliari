@@ -9,7 +9,7 @@ export async function GET() {
 			immobili: [
 				{
 					id: 0,
-					titolo: "Appartamento in centro",
+					titolo: "Appartamento a Pinè",
 					descrizione: "Appartamento luminoso e spazioso in centro città.",
 					copertina: "/app_1_03.jpg",
 					affitto: "700€",
@@ -28,8 +28,8 @@ export async function GET() {
 					],
 					video: ["/video_1.mp4"],
 					coordinates: {
-						lat: 45.123456,
-						lng: 10.123456,
+						lat: 45.739054,
+						lng: 10.713260,
 					},
 				},
 				{
@@ -55,28 +55,7 @@ export async function GET() {
 						lng: 10.123456,
 					},
 				},
-				{
-					id: 2,
-					titolo: "Appartamento Bondone",
-					descrizione: "Descrizione dell'appartamento in Bondone",
-					copertina: "https://picsum.photos/300/200",
-					affitto: "100000€",
-					superficie: "20",
-					locali: "3",
-					bagni: "2",
-					immagini: [
-						"https://picsum.photos/300/200",
-						"https://picsum.photos/300/200",
-						"https://picsum.photos/300/200",
-						"https://picsum.photos/300/200",
-					],
-					video: [],
-					coordinates: {
-						lat: 45.123456,
-						lng: 10.123456,
-					},
-				},
-			],
+							],
 		};
     return new Response(JSON.stringify(data), {
         status: 200,
