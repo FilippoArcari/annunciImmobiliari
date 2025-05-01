@@ -4,7 +4,7 @@ export const fetchSellerData = async (): Promise<Data> => {
 	// For server-side
 	const baseUrl =
 		process.env.NODE_ENV === "production"
-			? process.env.BASE_URL || "https://annunci-immobiliari.vercel.app/"
+			? process.env.BASE_URL || "https://annunci-immobiliari.vercel.app"
 			: "http://localhost:3000";
 
 	if (!baseUrl) {
