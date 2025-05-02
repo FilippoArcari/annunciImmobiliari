@@ -78,6 +78,9 @@ export default function Page(props: { params: Promise<{ id: string }> }) {
 			<h1 className='text-2xl font-bold'>{immoData.titolo}</h1>
 			<h2>{immoData.descrizione}</h2>
 			<Carousel images={immoData.immagini || []} videos={immoData.video} />
+			<p className='w-full items-center text-2xl text-accent text-center font-bold '>
+				Informazioni
+			</p>
 			<div className='flex gap-4 w-full justify-center'>
 				<span>
 					Superfice: <span>{immoData.superficie}</span>
@@ -92,7 +95,16 @@ export default function Page(props: { params: Promise<{ id: string }> }) {
 			<div className='flex justify-center'>
 				<span>Prezzo: </span> <strong>{immoData.affitto}</strong>
 			</div>
+			<div className='divider w-full'></div>
+			<p className='w-full items-center text-2xl text-accent text-center font-bold '>
+				Disponibilità
+			</p>
+
 			<CalendarView id={id} />
+			<div className='divider'></div>
+			<p className='w-full items-center text-2xl text-accent text-center font-bold '>
+				Posizione
+			</p>	
 			<MapPointer
 				lat={immoData.coordinates.lat}
 				lon={immoData.coordinates.lng}
