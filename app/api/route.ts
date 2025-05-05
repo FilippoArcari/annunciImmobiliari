@@ -48,7 +48,7 @@ export async function GET() {
 						"/app_2_05.jpg",
 						"/app_2_06.jpg",
 					],
-					video: [],
+					video: ["/app_2_01.mp4"],
 					coordinates: {
 						lat: 45.123456,
 						lng: 10.123456,
