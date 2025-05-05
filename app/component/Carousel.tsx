@@ -6,14 +6,13 @@ interface CarouselProps {
 	videos: string[];
 }
 const Carousel = ({ images, videos }: CarouselProps) => {
-	const className = "carousel-item w-full max-w-md flex-shrink-0";
 	return (
 		<div className='carousel carousel-center bg-transparent rounded-box  space-x-4 p-4'>
 			{/* Video Before Image */}
 
 			{videos
 				? videos.map((srcVideo, index) => (
-						<div className={className} key={index}>
+						<div className='carousel-item rounded-2xl' key={index}>
 							<video
 								width='300'
 								height='200'
@@ -30,13 +29,13 @@ const Carousel = ({ images, videos }: CarouselProps) => {
 
 			{images
 				? images.map((image, index) => (
-						<div className={className} key={index}>
+						<div className='carousel-item rounded-2xl' key={index}>
 							<Image
 								src={image}
 								alt='carousel Image'
 								width={300}
 								height={200}
-								className='w-xl h-auto rounded-2xl '
+								className='w-xl h-auto rounded-2xl'
 							/>
 						</div>
 				  ))
