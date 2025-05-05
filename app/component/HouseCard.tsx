@@ -13,11 +13,9 @@ const HouseCard = (immoData:Immobile) => {
 				<Image
 					src={immoData.copertina}
 					alt='alt'
-					width={100}
-					height={100}
-					layout='responsive'
-					style={{ width: "auto", height: "100%" }}
-					className='rounded-lg'
+					width={500}
+					height={500}
+					className="h-full w-auto rounded-lg object-contain"
 					/>
 					
 			</figure>

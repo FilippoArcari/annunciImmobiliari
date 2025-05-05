@@ -1,7 +1,11 @@
 import { Data } from "../types"; // Adjust the path and module name as needed
 
 export const fetchSellerData = async (): Promise<Data> => {
-	const baseUrl = process.env.BASE_URL;
+	// For server-side
+	const baseUrl =
+		process.env.NODE_ENV === "production"
+			? process.env.BASE_URL || "https://annunci-immobiliari.vercel.app"
+			: "http://localhost:3000";
 
 	if (!baseUrl) {
 		throw new Error("BASE_URL is not defined");
