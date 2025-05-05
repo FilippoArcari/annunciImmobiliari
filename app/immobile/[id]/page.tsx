@@ -83,13 +83,13 @@ export default function Page(props: { params: Promise<{ id: string }> }) {
 			</p>
 			<div className='flex gap-4 w-full justify-center'>
 				<span>
-					Superfice: <span>{immoData.superficie}</span>
+					Superfice: <span>{immoData.superfici}</span>
 				</span>
 				<span>
-					Locali: <span>{immoData.locali}</span>
+					Locali: <span>{immoData.rooms}</span>
 				</span>
 				<span>
-					Bagni: <span>{immoData.bagni}</span>
+					Bagni: <span>{immoData.bathroom}</span>
 				</span>
 			</div>
 			<div className='flex justify-center'>

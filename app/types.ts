@@ -12,7 +12,7 @@ export interface Immobile {
 	copertina: string;
 	affitto: string;
 	superfici: string;
-	rooms: string;e
+	rooms: string;
 	bathroom: string;
 	immagini: string[];
 	video: string[];
