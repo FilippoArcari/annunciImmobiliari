@@ -14,7 +14,6 @@ const Footer = ({sellerData}:FooterProps) => {
 					<span>{sellerData.nome}</span>
 					<span>{sellerData.cognome}</span>
 				</div>
-				<span>Numero di telefono: {sellerData.numero_telefono}</span>
 				<a href={`mailto:${sellerData.mail}`}>{sellerData.mail}</a>
 			</aside>
 		</footer>

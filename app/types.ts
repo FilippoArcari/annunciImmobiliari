@@ -2,7 +2,6 @@ export interface Anagrafiche {
 	nome: string;
 	cognome: string;
 	mail: string;
-	numero_telefono: string;
 }
 
 export interface Immobile {

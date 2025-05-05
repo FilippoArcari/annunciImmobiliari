@@ -4,7 +4,6 @@ export async function GET() {
 				nome: "Mario",
 				cognome: "Rossi",
 				mail: "prova@25aprile.com",
-				numero_telefono: "123 456 789",
 			},
 			immobili: [
 				{
