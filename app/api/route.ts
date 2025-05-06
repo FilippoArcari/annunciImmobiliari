@@ -12,7 +12,7 @@ export async function GET() {
 					descrizione: "Traumhaftes Ferienhaus mit atemberaubendem Gardasee-Blick  Perfekter Urlaub in Tignale!Genießen Sie einen unvergesslichen Aufenthalt in diesem charmanten 50 m² großen Apartment mit 4 Betten und 4 Räumen, nur 5 Gehminuten vom Zentrum Tignales entfernt. Das Highlight? Ein weiter Garten mit atemberaubendem Panoramablick über den gesamten Gardasee  ideal zum Entspannen und für romantische Abende unter dem italienischen Himmel.Für weitere Informationen zu Preisen und Verfügbarkeit kontaktieren Sie: bighouseserviceit@gmail.com",
 					copertina: "/app_1_08.jpg",
 					affitto: "60€/day",
-					superficie: "50 metri quadrati",
+					superficie: "50 mq",
 					locali: "4",
 					bagni: "1",
 					immagini: [
@@ -37,7 +37,7 @@ export async function GET() {
 					descrizione: "Traumhaftes Ferienhaus mit atemberaubendem Gardasee-Blick  Perfekter Urlaub in Tignale!Genießen Sie einen unvergesslichen Aufenthalt in diesem charmanten 50 m² großen Apartment mit 4 Betten und 4 Räumen, nur 5 Gehminuten vom Zentrum Tignales entfernt. Das Highlight? Ein weiter Garten mit atemberaubendem Panoramablick über den gesamten Gardasee  ideal zum Entspannen und für romantische Abende unter dem italienischen Himmel. Für weitere Informationen zu Preisen und Verfügbarkeit kontaktieren Sie: bighouseserviceit@gmail.com",
 					copertina: "/app_2_07.png",
 					affitto: "60€",
-					superficie: "50 metri quadri",
+					superficie: "50 mq",
 					locali: "4",
 					bagni: "1",
 					immagini: [
